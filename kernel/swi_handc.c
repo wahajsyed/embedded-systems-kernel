@@ -1,0 +1,80 @@
+/**
+ * file: software interrrupt handler
+ * called by assembly wrapper and invokes the right 
+ * system call to be executed
+ */
+#include <exports.h>
+#include <bits/swi.h>
+#include <bits/errno.h>
+#include <task.h>
+
+int read_syscall(int,void *,int);		// global initialization
+int write_syscall(int, const void *,int);
+int sleep_syscall(int);
+int task_create(task_t * tasks, size_t num_tasks);
+void invalid_syscall(unsigned int);
+unsigned long time_syscall(void);
+int event_wait(unsigned int);
+
+int mutex_create(void);
+int mutex_unlock(int);
+int mutex_lock(int );
+
+
+
+//		 r0		r1	 r2	 r3	
+int swi_handc(int fd_stat,void * buf,int count,int swi_num)
+{
+int e=0;
+task_t * tasks;
+tasks=(task_t *)buf;
+switch(swi_num)
+{
+case READ_SWI:				//readsyscall
+	e=read_syscall(fd_stat,(char *)buf,count);
+	break;
+case WRITE_SWI:				//write syscall
+	e=write_syscall(fd_stat,(char *)buf,count);
+	break;
+case SLEEP_SWI:
+	e=sleep_syscall(fd_stat);
+	break;
+case TIME_SWI:
+	e=time_syscall();
+	break;
+case CREATE_SWI:
+	e=task_create(tasks,count);printf("E value %d\n",e);
+	break;
+case EVENT_WAIT:
+	//printf("Swi handler event wait\n");
+	e=event_wait(fd_stat);
+	break;
+case MUTEX_CREATE:
+//	printf("Swi handler Mutex creat\n");
+	e=mutex_create();
+	break;
+case MUTEX_LOCK:
+//	printf("Swi handler Mutex lock\n");
+	e=mutex_lock(fd_stat);
+	break;
+case MUTEX_UNLOCK:
+//	printf("Swi handler Mutex unlock\n");
+	e=mutex_unlock(fd_stat);
+	break;
+default:				//unrecognized number
+	printf("Swi no. not recognized\n");
+	invalid_syscall(fd_stat); 
+	break;
+}
+if (e==-EBADF)				//check for returns
+printf("Error: file descriptor not available\n");
+else if(e==-EFAULT)		
+printf("Memory reference Error: out of bounds\n");
+else if(e==-EINVAL)		
+printf("Error: Invalid device number\n");
+else if(e==-ESCHED)		
+printf("Error: Tasks are not schedulable\n");
+return(e);
+}	
+	
+

@@ -1,0 +1,37 @@
+/**
+ * file: swi_inst.c
+ * stores the instructions present in the current software
+ * installer and directs to the location of our custom handler
+ */
+#include <exports.h>
+#include "glob.h"
+#define ldr_inst 0xe59ff000
+#define ldr_offset 0xe51ff004
+
+unsigned swi_inst(void *location,unsigned *vector) 
+{				//location of the swi handler 0x08 &f_ptr
+unsigned temp,test;
+test=*vector;			// access ldr pc,[pc,offset] inst at 0x08
+test=test & 0xffff000;		// eliminate the offset
+if((test ^ ldr_inst)==1)	// test if the instruction is ldr
+{	printf("The given instruction is not ldr\n");
+	return(-1);
+}
+temp=*vector;			// read the location
+temp=(temp & 0x00000fff);	// obtain offset from inst
+
+temp=temp+8+(unsigned)vector;	// add pc + 8 to offset to obtain the location of swi address
+
+unsigned *temp_ptr= (unsigned *)temp;	// create a pointer to swi addrs location
+
+unsigned *cswi_ptr=(unsigned *)*temp_ptr; //create a pointer to swi handlr address
+
+instswi1=*cswi_ptr;		//save the current 1st inst
+*cswi_ptr= ldr_offset;		//replace first instruction of swi hndlr
+cswi_ptr=cswi_ptr+0x01;		//access the next inst
+instswi2=*cswi_ptr;		//save the next inst
+*cswi_ptr=(unsigned)location;	//replace the 2nd inst
+
+return(1);
+
+}
