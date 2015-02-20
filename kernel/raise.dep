@@ -1,0 +1,14 @@
+/home/badiuddin/Downloads/backup/lab4/kernel/raise.o:  \
+ /home/badiuddin/Downloads/backup/lab4/kernel/raise.c \
+  /home/badiuddin/Downloads/backup/lab4/uboot/include/exports.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/types.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/stdarg.h \
+  /home/badiuddin/Downloads/backup/lab4/uboot/include/_exports.h
+
+/home/badiuddin/Downloads/backup/lab4/uboot/include/exports.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/types.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/stdarg.h:
+
+/home/badiuddin/Downloads/backup/lab4/uboot/include/_exports.h:

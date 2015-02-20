@@ -1,0 +1,8 @@
+/home/badiuddin/Downloads/backup/lab4/kernel/memcheck.o:  \
+ /home/badiuddin/Downloads/backup/lab4/kernel/memcheck.c \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/kernel.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/types.h
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/kernel.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/types.h:

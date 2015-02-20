@@ -1,0 +1,32 @@
+/home/badiuddin/Downloads/backup/lab4/kernel/lock/mutex.o:  \
+ /home/badiuddin/Downloads/backup/lab4/kernel/lock/mutex.c \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/lock.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/types.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/task.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/config.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/sched.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/bits/errno.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/arm/psr.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/inline.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/lock/../sched/sched_i.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/arm/exception.h
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/lock.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/types.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/task.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/config.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/sched.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/bits/errno.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/arm/psr.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/inline.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/lock/../sched/sched_i.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/arm/exception.h:

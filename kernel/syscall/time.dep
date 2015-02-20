@@ -1,0 +1,23 @@
+/home/badiuddin/Downloads/backup/lab4/kernel/syscall/time.o:  \
+ /home/badiuddin/Downloads/backup/lab4/kernel/syscall/time.c \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/types.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/config.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/bits/errno.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/arm/timer.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/syscall.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/task.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/glob.h
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/types.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/config.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/bits/errno.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/arm/timer.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/syscall.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/task.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/glob.h:

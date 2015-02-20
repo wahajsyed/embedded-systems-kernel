@@ -1,0 +1,11 @@
+/home/badiuddin/Downloads/backup/lab4/kernel/arm/psr.o:  \
+ /home/badiuddin/Downloads/backup/lab4/kernel/arm/psr.c \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/types.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/arm/psr.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/inline.h
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/types.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/arm/psr.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/inline.h:

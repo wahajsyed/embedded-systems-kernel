@@ -1,0 +1,11 @@
+/home/badiuddin/Downloads/backup/lab4/kernel/arm/reg.o:  \
+ /home/badiuddin/Downloads/backup/lab4/kernel/arm/reg.c \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/types.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/arm/reg.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/inline.h
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/types.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/arm/reg.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/inline.h:

@@ -1,0 +1,14 @@
+/home/badiuddin/Downloads/backup/lab4/kernel/sched/ub_test.o:  \
+ /home/badiuddin/Downloads/backup/lab4/kernel/sched/ub_test.c \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/task.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/types.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/config.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/sched.h
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/task.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/types.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/config.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/sched.h:

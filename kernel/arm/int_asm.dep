@@ -1,0 +1,8 @@
+/home/badiuddin/Downloads/backup/lab4/kernel/arm/int_asm.o:  \
+ /home/badiuddin/Downloads/backup/lab4/kernel/arm/int_asm.S \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/asm.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/arm/psr.h
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/asm.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/arm/psr.h:

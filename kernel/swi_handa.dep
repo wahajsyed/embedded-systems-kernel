@@ -1,0 +1,5 @@
+/home/badiuddin/Downloads/backup/lab4/kernel/swi_handa.o:  \
+ /home/badiuddin/Downloads/backup/lab4/kernel/swi_handa.S \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/bits/swi.h
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/bits/swi.h:

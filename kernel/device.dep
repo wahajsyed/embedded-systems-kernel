@@ -1,0 +1,44 @@
+/home/badiuddin/Downloads/backup/lab4/kernel/device.o:  \
+ /home/badiuddin/Downloads/backup/lab4/kernel/device.c \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/types.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/assert.h \
+  /home/badiuddin/Downloads/backup/lab4/uboot/include/exports.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/stdarg.h \
+  /home/badiuddin/Downloads/backup/lab4/uboot/include/_exports.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/config.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/task.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/sched.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/device.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/arm/reg.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/inline.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/arm/psr.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/arm/exception.h \
+  /home/badiuddin/Downloads/backup/lab4/kernel/sched/sched_i.h
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/types.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/assert.h:
+
+/home/badiuddin/Downloads/backup/lab4/uboot/include/exports.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/stdarg.h:
+
+/home/badiuddin/Downloads/backup/lab4/uboot/include/_exports.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/config.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/task.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/sched.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/device.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/arm/reg.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/inline.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/arm/psr.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/arm/exception.h:
+
+/home/badiuddin/Downloads/backup/lab4/kernel/sched/sched_i.h:

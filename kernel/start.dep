@@ -1,0 +1,5 @@
+/home/badiuddin/Downloads/backup/lab4/kernel/start.o:  \
+ /home/badiuddin/Downloads/backup/lab4/kernel/start.S \
+  /home/badiuddin/Downloads/backup/lab4/kernel/include/asm.h
+
+/home/badiuddin/Downloads/backup/lab4/kernel/include/asm.h:
