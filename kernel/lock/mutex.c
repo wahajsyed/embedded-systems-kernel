@@ -1,8 +1,12 @@
 /**
- * file: mutex.c
+ * @file mutex.c
  *
- * brief Implements mutices.
+ * @brief Implements mutices.
  *
+ * @author Harry Q Bovik < PUT YOUR NAMES HERE
+ *
+ * 
+ * @date  
  */
 
 //#define DEBUG_MUTEX

@@ -45,19 +45,18 @@ FUNC(ctx_switch_full)//r0 next r1 current
 	// tcb.context is the input
 	//save current context and dispatch the said task
 	//dispatch the said task by doing launch task remember registers
-	
-	add	r1,#ctx_size   //move to the end of the context structure	
-	stmfd	r1,{r4-r11,sp,lr} //store the registers on the context
+	add	r1,#ctx_size	
+	stmfd	r1,{r4-r11,sp,lr}
 	b	ctx_switch_half
 
 
 /*add your code to perform a half context switch */	
 FUNC(ctx_switch_half)//r0,r1 r7 has the launch number r8 has the kernel stack position
-	ldmfd	r0,{r4-r11,sp,lr} //load the registers
-	mov	r1,#0		 // compare lr with ro(0)
-	cmp	lr,r1		 //to check if the task has been launched before	
-	bne	skip		 //if it has been launched before skip to skip
-	b	launch_task	// else launch task
+	ldmfd	r0,{r4-r11,sp,lr}
+	mov	r1,#0
+	cmp	lr,r1
+	bne	skip	
+	b	launch_task
 skip:
 	mov	pc,lr
 	

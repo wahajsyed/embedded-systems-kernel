@@ -7,10 +7,15 @@
 **************************************************************/
 
 
-/** file io.c
+/** @file io.c
  *
- * Kernel I/O syscall implementations
+ * @brief Kernel I/O syscall implementations
  *
+ * @author Mike Kasick <mkasick@andrew.cmu.edu>
+ * @date   Sun, 14 Oct 2007 00:07:38 -0400
+ *
+ * @author Kartik Subramanian <ksubrama@andrew.cmu.edu>
+ * @date   2008-11-16
  */
 
 #include <types.h>

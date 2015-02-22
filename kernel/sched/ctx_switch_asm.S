@@ -1,11 +1,13 @@
-/** file ctx_switch_asm.S
+/** @file ctx_switch_asm.S
  *
- * Contains the core context switch routine.
+ * @brief Contains the core context switch routine.
  *
  * These routines all assume that the caller is following AAPCS, needs
  * no co-processor registers and that the caller is in SVC mode. Furthermore,
  * the SPSR is considered a spare/scratch register and hence, is not saved.
  *
+ * @author Kartik Subramanian
+ * @date   2008-11-21
  */
 
 	.file "ctx_switch_asm.S"

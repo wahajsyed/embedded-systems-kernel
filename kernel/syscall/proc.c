@@ -6,10 +6,15 @@
 *
 **************************************************************/
 
-/** file proc.c
+/** @file proc.c
  * 
- * Implementation of `process' syscalls
+ * @brief Implementation of `process' syscalls
  *
+ * @author Mike Kasick <mkasick@andrew.cmu.edu>
+ * @date   Sun, 14 Oct 2007 00:07:38 -0400
+ *
+ * @author Kartik Subramanian <ksubrama@andrew.cmu.edu>
+ * @date 2008-11-12
  */
 
 #include <exports.h>

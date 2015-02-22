@@ -16,9 +16,9 @@ swi_handa:
 	bic	ip,ip,#irq_enable@enable the irq
 	msr	cpsr,ip		@save back the register
 
-@Recover user registers and save
-	mrs      r0, spsr
-	stmfd    sp, {r0, sp, lr}^
+@Recover user registers from the previous svc call and save
+	mrs      r4, spsr
+	stmfd    sp, {r4, sp, lr}^
 	add      sp, sp, #-12
 
 @obtaining swi number and exit service
@@ -38,9 +38,9 @@ _continue:
 	bl	swi_handc	@call c swi handler for others
 
 @Restore registers
-	ldmfd    sp, {r0, sp, lr}^
+	ldmfd    sp, {r4, sp, lr}^
 	add      sp, sp, #12
-	msr      spsr, r0
+	msr      spsr, r4
 
 	ldr	r4, [sp,#13*4]	@load back spsr into r4
 	msr	spsr,r4		@restore spsr

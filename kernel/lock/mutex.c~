@@ -132,7 +132,7 @@ int mutex_unlock(int mutex  __attribute__((unused)))
 	
 	unsigned int c_prio = get_cur_prio();unsigned int temp;
 	disable_interrupts();	
-	if(gtMutex[mutex].bAvailable==0) //check availability
+	if(gtMutex[mutex].bAvailable==0)
 	{
 		return(-EINVAL);
 	}	
@@ -144,10 +144,10 @@ int mutex_unlock(int mutex  __attribute__((unused)))
 			return(-EPERM);
 		}
 		system_tcb[c_prio].holds_lock=0; //remove the lock by task
-		gtMutex[mutex].bLock=0;		//make the mutex available
-		gtMutex[mutex].pHolding_Tcb=&system_tcb[IDLE_PRIO]; //re initialize holding tcb
-		temp=(*gtMutex[mutex].pSleep_queue).cur_prio;	    //checking the sleep que
-		if(temp!=63)					    //check if sleep queue is full
+		gtMutex[mutex].bLock=0;	
+		gtMutex[mutex].pHolding_Tcb=&system_tcb[IDLE_PRIO];
+		temp=(*gtMutex[mutex].pSleep_queue).cur_prio;		
+		if(temp!=63)
 		{
 			runqueue_add(gtMutex[mutex].pSleep_queue,(*gtMutex[mutex].pSleep_queue).cur_prio); // remove the task from sleep queue
 			gtMutex[mutex].pSleep_queue=(*gtMutex[mutex].pSleep_queue).sleep_queue;		 // update the sleep queue

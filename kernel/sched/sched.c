@@ -6,10 +6,12 @@
 *
 **************************************************************/
 
-/** file sched.c
+/** @file sched.c
  * 
- * Top level implementation of the scheduler.
+ * @brief Top level implementation of the scheduler.
  *
+ * @author Kartik Subramanian <ksubrama@andrew.cmu.edu>
+ * @date 2008-11-20
  */
 
 #include <types.h>

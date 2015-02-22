@@ -16,7 +16,7 @@ swi_handa:
 	bic	ip,ip,#irq_enable@enable the irq
 	msr	cpsr,ip		@save back the register
 
-@Recover user registers and save
+@Recover and save user registers because previously we saved svc registers
 	mrs      r4, spsr
 	stmfd    sp, {r4, sp, lr}^
 	add      sp, sp, #-12

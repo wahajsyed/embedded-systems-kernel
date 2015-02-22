@@ -1,7 +1,9 @@
-/** file run_queue.c
+/** @file run_queue.c
  * 
- * Run queue maintainence routines.
+ * @brief Run queue maintainence routines.
  *
+ * @author Kartik Subramanian <ksubrama@andrew.cmu.edu>
+ * @date 2008-11-21
  */
 
 #include <types.h>
