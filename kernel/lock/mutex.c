@@ -3,10 +3,7 @@
  *
  * @brief Implements mutices.
  *
- * @author Harry Q Bovik < PUT YOUR NAMES HERE
- *
- * 
- * @date  
+ * @authorWahajuddin Syed 
  */
 
 //#define DEBUG_MUTEX

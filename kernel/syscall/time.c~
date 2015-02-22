@@ -1,9 +1,16 @@
+/*************************************************************
+*
+*Group Number : 40
+*Group Members: Wahajuddin Syed <wsyed>
+* 	        Jagannathan Chakravarthy <jchakrav>
+*
+**************************************************************/
+
 /** @file time.c
  *
  * @brief Kernel timer based syscall implementations
  *
- * @author Kartik Subramanian <ksubrama@andrew.cmu.edu>
- * @date   2008-11-16
+ * @author Wahajuddin Syed
  */
 
 #include <types.h>

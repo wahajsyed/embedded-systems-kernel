@@ -1,3 +1,11 @@
+/*************************************************************
+*
+*Group Number : 40
+*Group Members: Wahajuddin Syed <wsyed>
+* 	        Jagannathan Chakravarthy <jchakrav>
+*
+**************************************************************/
+
 /** @file sched.c
  * 
  * @brief Top level implementation of the scheduler.

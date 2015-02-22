@@ -10,8 +10,7 @@
  * 
  * @brief Top level implementation of the scheduler.
  *
- * @author Kartik Subramanian <ksubrama@andrew.cmu.edu>
- * @date 2008-11-20
+ * @author Wahajuddin Syed
  */
 
 #include <types.h>

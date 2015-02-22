@@ -8,10 +8,9 @@
 
 /** @file time.c
  *
- * @brief Kernel timer based syscall implementations
+ * Kernel timer based syscall implementations
  *
- * @author Kartik Subramanian <ksubrama@andrew.cmu.edu>
- * @date   2008-11-16
+ * @author Wahajuddin Syed
  */
 
 #include <types.h>

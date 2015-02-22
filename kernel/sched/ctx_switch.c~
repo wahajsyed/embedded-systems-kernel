@@ -1,9 +1,8 @@
 /** @file ctx_switch.c
  * 
- * @brief C wrappers around assembly context switch routines.
+ * C wrappers around assembly context switch routines.
  *
- * @author Kartik Subramanian <ksubrama@andrew.cmu.edu>
- * @date 2008-11-21
+ * @author Wahajuddin Syed
  */
  
 
@@ -45,10 +44,10 @@ void dispatch_init(tcb_t* idle __attribute__((unused)))
 void dispatch_save(void)
 {
 	//context switch full
-	unsigned int prio_cur=(*cur_tcb).cur_prio;//can use the current prio tcb
+	unsigned int prio_cur=(*cur_tcb).cur_prio;//get the current prio tcb
 	unsigned int prio_next,i;
-	prio_next=highest_prio();
-	cur_tcb=&system_tcb[prio_next];//update the current tcb
+	prio_next=highest_prio();		//get the next highest prio
+	cur_tcb=&system_tcb[prio_next];		//update the current tcb
 	ctx_switch_full(&system_tcb[prio_next].context,&system_tcb[prio_cur].context);	
 
 }
@@ -61,8 +60,8 @@ void dispatch_save(void)
  */
 void dispatch_nosave(void)//disable interrupts
 {
-					//switch to the highest priority task without context switch
-	unsigned int prio=highest_prio();
+					
+	unsigned int prio=highest_prio();//switch to the highest priority task without saving current
 	cur_tcb=&system_tcb[prio];	//update the current prio tcb
 	ctx_switch_half(&system_tcb[prio].context);
 }

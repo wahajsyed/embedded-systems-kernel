@@ -38,10 +38,11 @@ int assign_schedule(task_t** tasks  __attribute__((unused)), size_t num_tasks  _
 	sum=sum+(double)(ptr[i].C/ptr[i].T);
 	}
 	sum=sum+(double)((ptr[i].C+ptr[i].B)/ptr[i].T);
+	
 	if(sum<=s_array[num_tasks-1])	
-	return 1; 	
+	{return 1;} 	
 	else
-	return 0;
+	{return 0;}
 
 }
 	
